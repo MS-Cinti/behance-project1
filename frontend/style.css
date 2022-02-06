@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: inherit;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+
+a img {
+  border: none;
+}
+
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+
+textarea {
+  resize: none;
+}
+
+
+button,
+textarea,
+select {
+  appearance: none !important;
+  border-radius: 0;
+}
+
+/*end of css reset*/
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+}
+
+header{
+  position: fixed;
+  display: flex;
+  justify-content: space-between; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 3vw;
+  z-index: 99;
+  text-align: center;
+  background-color:aliceblue;
+  opacity: 0.5;
+  padding: 1vw;
+  font-size: 1vw;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: rgb(39, 66, 66);
+  letter-spacing: 3px;
+   
+}
+
+#Welcome{
+  position: relative;
+  width: 100%;
+  max-height: 100vh;       /*max-height: ettől reszponzív a h1, h2!!!!*/
+  margin: auto;
+}
+
+#Welcome img{
+  display: flex;
+  width: 100%;
+  max-height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#Welcome .h-tags-welcome{
+  font-family: 'Raleway', sans-serif;
+  color: darkslategrey;
+}
+
+#Welcome .h-tags-welcome h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 100;
+  font-size: 6vw;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+}
+
+#Welcome .h-tags-welcome h2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -380%);
+  font-size: 1.5vw;
+  letter-spacing: 6px;
+}
+
+#Welcome .h-tags-welcome h3{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 1000%);
+  font-size: 1vw;
+  letter-spacing: 5px;
+  word-spacing: 4px;
+}
+
+#Welcome .button-welcome{
+  position: absolute;
+  display: inline;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 500%);
+  width: 20vw;
+  height: 3vw;
+  background-color:dimgray;
+  border-radius: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.8vw;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color:aliceblue;
+  opacity: 0.6;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+#Welcome .button-welcome:hover{
+  opacity: 0.9;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#Motivation{
+  width: 100%;
+  max-height: 100vh;
+  margin: auto;
+  background-color: aliceblue;
+}
+
+#Motivation .article-motivation{
+  font-family: 'Raleway', sans-serif;
+  color: darkslategrey;
+}
+
+#Motivation .article-motivation .first-h1-motivation{
+  font-size: 2.2vw;
+  font-weight: 400;
+  letter-spacing: 5px;
+  padding: 4.8vw 3.9vw;
+  line-height: 3.9vw;
+}
+
+#Motivation .article-motivation p{
+  font-size: 1.2vw;
+  letter-spacing: 2px;
+  padding: 4.8vw 22.9vw;
+  line-height: 2.6vw;
+  width: 98vw;
+}
+
+#Everyone{
+  position: relative;
+  width: 100%;
+  max-height: 100vh;     /*ez teszi a h1-et és p-t reszponzívvá*/
+  margin: auto;
+  background-color: aliceblue;
+}
+
+#Everyone h1{
+  position: absolute;
+  width: 13vw;
+  left: 60%;
+  top: 20%;
+  font-size: 3.2vw;
+  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
+  color: darkslategrey;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+#Everyone img{
+  max-width: 50%;
+  margin-top: 5vw;
+}
+
+#Everyone p{
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  color: darkslategrey;
+  font-size: 1.2vw;
+  letter-spacing: 2px;
+  line-height: 2.6vw;
+  width: 36vw;
+  left: 60%;
+  top: 70%;
+}
+
+#Poses{
+  position: relative;
+  width: 100%;
+  max-height: 100%;     /*ez teszi a h1-et és p-t reszponzívvá*/
+  margin: auto;
+  background-color: aliceblue;
+}
+
+#Poses h1{
+  padding: 10.8vw 3.9vw;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 3vw;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+
+#Poses .flex-box1{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 6px;
+  background-color: aliceblue;
+}
+
+#Poses .flex-box1 img{
+  max-height: 40%;     /*ezzel ugyanolyan magasak a képek*/
+  width: 40%;
+}
+
+#Poses .flex-box-subtitle1{
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#Poses .flex-box-subtitle1 p{
+  padding: 1.3vw 0;
+  margin: 1.8vw;
+  width: 40%;
+  font-size: 3vw;
+  font-family: 'Montserrat', sans-serif;
+  border-bottom: 0.2vw solid darkslategrey;
+}
+
+#Poses .flex-box2{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 18vw;              /*ezzel tudtam úgy letolni a képeket, hogy nem kisebbedtek*/
+}
+
+
+#Poses .flex-box2 img{
+  max-height: 40%;
+  width: 40%;
+}
+
+#Poses .flex-box-subtitle2{
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: aliceblue;
+}
+
+#Poses .flex-box-subtitle2 p{
+  padding: 1.3vw 0;
+  margin: 1.8vw;
+  width: 40%;
+  font-size: 3vw;
+  font-family: 'Montserrat', sans-serif;
+  border-bottom: 0.2vw solid darkslategrey;
+}
+
