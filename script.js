@@ -18,7 +18,7 @@ function loadEvent(eventObject){
 
   console.log(anchors);
 
-  rootElement.insertAdjacentHTML("afterbegin", `<header>${ anchors }</header>`);
+  rootElement.insertAdjacentHTML("afterbegin", `<header><nav>${ anchors }</nav></header>`);
   
 }
 
